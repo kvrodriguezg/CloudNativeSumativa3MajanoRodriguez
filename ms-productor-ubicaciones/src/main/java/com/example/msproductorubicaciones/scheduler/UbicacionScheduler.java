@@ -19,7 +19,7 @@ public class UbicacionScheduler {
     private final Random random = new Random();
     private final List<String> vehiculos = Arrays.asList("VEH-001", "VEH-002", "VEH-003", "VEH-004", "VEH-005");
 
-    @Scheduled(fixedRate = 1000)
+    @Scheduled(fixedRate = 5000)
     public void generarYEnviarUbicacion() {
         String vehiculo = vehiculos.get(random.nextInt(vehiculos.size()));
         double latitud = -33.4372 + (random.nextDouble() - 0.5) * 0.1; // Coordenadas aleatorias cerca de Santiago
