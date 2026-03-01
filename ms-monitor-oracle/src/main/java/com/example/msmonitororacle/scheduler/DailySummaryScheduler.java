@@ -20,7 +20,7 @@ public class DailySummaryScheduler {
 
     private final RegistroRepository registroRepository;
 
-    @Scheduled(cron = "0 47 20 * * *")
+    @Scheduled(cron = "20 37 00 * * *")
     public void generateDailySummary() {
         log.info("--- GENERANDO RESUMEN DIARIO DE UBICACIONES Y HORARIOS ---");
 

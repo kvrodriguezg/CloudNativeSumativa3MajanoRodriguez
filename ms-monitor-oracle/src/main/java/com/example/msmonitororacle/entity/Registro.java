@@ -27,5 +27,5 @@ public class Registro {
     private LocalDateTime timestampUbicacion;
     private LocalDateTime horaLlegadaEstimada;
     private LocalDateTime fechaRegistro;
-    private String tipoRegistro; // indica si el registro es UBICACION o HORARIO
+    private String tipoRegistro; // UBICACION o HORARIO
 }
