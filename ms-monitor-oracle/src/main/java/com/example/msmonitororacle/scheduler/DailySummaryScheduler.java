@@ -20,10 +20,7 @@ public class DailySummaryScheduler {
 
     private final RegistroRepository registroRepository;
 
-    // Se ejecuta al "final del dia" (11:59 PM).
-    // Para pruebas puedes usar cron = "0 * * * * *" (cada minuto) o fixedRate =
-    // 60000
-    @Scheduled(cron = "0 59 23 * * *")
+    @Scheduled(cron = "0 47 20 * * *")
     public void generateDailySummary() {
         log.info("--- GENERANDO RESUMEN DIARIO DE UBICACIONES Y HORARIOS ---");
 

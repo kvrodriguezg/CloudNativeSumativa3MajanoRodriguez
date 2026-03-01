@@ -22,7 +22,6 @@ public class ProcesadorHorariosService {
     public void consumirUbicacionYProducirHorario(Ubicacion ubicacion) {
         log.info("Ubicacion consumida: {}", ubicacion);
 
-        // Logica mock para "actualizar horarios basado en ubicaciones"
         String ubicacionAprox = determinarArea(ubicacion.getLatitud(), ubicacion.getLongitud());
         LocalDateTime horaEstimada = ubicacion.getTimestamp().plusMinutes(15);
 
@@ -36,7 +35,7 @@ public class ProcesadorHorariosService {
     }
 
     private String determinarArea(double lat, double lon) {
-        // Logica simple basada en cordenadas para asignar sector
+        //Separar sectores dependiendo de las coordenadas de latitud
         if (lat < -33.43)
             return "Sector Norte";
         if (lat > -33.43)

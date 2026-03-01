@@ -1,0 +1,9 @@
+com\example\msmonitororacle\config\KafkaConfig.class
+com\example\msmonitororacle\model\Horario.class
+com\example\msmonitororacle\scheduler\DailySummaryScheduler.class
+com\example\msmonitororacle\controller\MonitorController.class
+com\example\msmonitororacle\MsMonitorOracleApplication.class
+com\example\msmonitororacle\repository\RegistroRepository.class
+com\example\msmonitororacle\service\MonitorService.class
+com\example\msmonitororacle\model\Ubicacion.class
+com\example\msmonitororacle\entity\Registro.class

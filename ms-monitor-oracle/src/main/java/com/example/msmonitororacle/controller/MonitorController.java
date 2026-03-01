@@ -66,7 +66,7 @@ public class MonitorController {
 
         List<Registro> registrosHoy = registroRepository.findByFechaRegistroBetween(startOfDay, endOfDay);
 
-        // Generar un resumen a nivel general de los lugares visitados y horarios
+        // Map agrupando por vehiculo para el resumen general
         Map<String, List<Registro>> resumenPorVehiculo = registrosHoy.stream()
                 .filter(r -> r.getIdVehiculo() != null)
                 .collect(Collectors.groupingBy(Registro::getIdVehiculo));

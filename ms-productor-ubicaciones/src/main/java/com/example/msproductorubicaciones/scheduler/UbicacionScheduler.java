@@ -22,7 +22,7 @@ public class UbicacionScheduler {
     @Scheduled(fixedRate = 5000)
     public void generarYEnviarUbicacion() {
         String vehiculo = vehiculos.get(random.nextInt(vehiculos.size()));
-        double latitud = -33.4372 + (random.nextDouble() - 0.5) * 0.1; // Coordenadas aleatorias cerca de Santiago
+        double latitud = -33.4372 + (random.nextDouble() - 0.5) * 0.1; //Coordenadas al azar
         double longitud = -70.6506 + (random.nextDouble() - 0.5) * 0.1;
 
         Ubicacion ubicacion = new Ubicacion(vehiculo, latitud, longitud, LocalDateTime.now());
