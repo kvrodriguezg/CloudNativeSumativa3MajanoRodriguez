@@ -66,7 +66,7 @@ public class MonitorController {
 
         List<Registro> registrosHoy = registroRepository.findByFechaRegistroBetween(startOfDay, endOfDay);
 
-        // Map agrupando por vehiculo
+        //Map agrupando por vehiculo
         Map<String, List<Registro>> resumenPorVehiculo = registrosHoy.stream()
                 .filter(r -> r.getIdVehiculo() != null)
                 .collect(Collectors.groupingBy(Registro::getIdVehiculo));
